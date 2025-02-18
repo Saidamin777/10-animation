@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+}
+
+.shake {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding: 20px 40px;
+    background: #e74c3c;
+    border-radius: 10px;
+    animation: shake 0.3s infinite linear;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-3px, 3px); }
+    50% { transform: translate(3px, -3px); }
+    75% { transform: translate(-3px, 3px); }
+    100% { transform: translate(0, 0); }
+}
